@@ -1,0 +1,29 @@
+{
+    "name":"My ColdBox App",
+    "trayEnable":false,
+    "dockEnable":false,
+    "app":{
+        "cfengine":"boxlang@1",
+        "engineConfigFile":"./runtime/boxlang.json"
+    },
+    "jvm":{
+        "heapSize":"1024",
+        "javaVersion":"openjdk21_jre"
+    },
+    "web":{
+        "webroot":"public",
+        "rewrites":{
+            "enable":true
+        },
+        "aliases":{
+            "/coldbox/system/exceptions":"./lib/coldbox/system/exceptions/",
+            "/tests":"./tests/"
+        },
+        "http":{
+            "port":"3000"
+        }
+    },
+    "scripts":{
+        "onServerInitialInstall":"install bx-compat-cfml,bx-esapi"
+    }
+}
