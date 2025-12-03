@@ -7,7 +7,9 @@
 <!---
 	Overview
 	- Welcome
+		- https://github.com/grantcopley/cbwire-5-webinar-launch
 	- What is CBWIRE / Livewire (Greeter, Alpine, Transition)
+		- https://cbwire.ortusbooks.com/
 	- New Features
 		- BoxLang Support
 		- Security Features
@@ -33,5 +35,6 @@
 			- File Uploads
 			- CBWIRE CLI - https://github.com/mrigsby/cbwire-cli
 	- Launch (https://github.com/coldbox-modules/cbwire)
+		- CommandBox: 'box install cbwire@5'
 	- Q&A
 --->
