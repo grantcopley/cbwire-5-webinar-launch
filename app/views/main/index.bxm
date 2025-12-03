@@ -1,24 +1,27 @@
 <bx:output>
 <div>
-	#wire( name="DotNotationWire" )#
+	<!--- #wire( "Greeter" )# --->
 </div>
 </bx:output>
 
 <!---
 	Overview
 	- Welcome
-	- What is CBWIRE (Greeter, Alpine, Transition)
+	- What is CBWIRE / Livewire (Greeter, Alpine, Transition)
 	- New Features
-		- @extends for Single file components
+		- BoxLang Support
 		- Security Features
 			-onSecure (AdminPanel)
 				- #wire( "AdminPanel", { userId: 50 } )#
 				- secureMountFailMessage
 				- cbsecurity annotations
-			- Lazy Loading lazy = true (LazyWire)
-			- Dot Notation Data Properties (DotNotationWire)
-			- Locked Properties (LockedPropertiesWire)
-			- Folder Organization ( wires/subfolder )
+		- @extends for Single file components
+		- CSRF New Implementation
+		- Lazy Loading lazy = true (LazyWire)
+		- Dot Notation Data Properties (DotNotationWire)
+		- Locked Properties (LockedPropertiesWire)
+		- Folder Organization ( wires/subfolder )
+		- Event objects ( EventObjectWire )
 		- Livewire v3.6.4
 			- New Directives
 				- wire:current
@@ -26,7 +29,8 @@
 				- wire:show
 				- wire:text
 				- wire:replace
-
-
-
+		- Honorable Mentions
+			- File Uploads
+			- CBWIRE CLI - https://github.com/mrigsby/cbwire-cli
+	- Q&A
 --->
