@@ -1,0 +1,29 @@
+<bx:output>
+    <div>
+        <h1>Dot Notation Wire</h1>
+
+        <p>First Name: #user.name.first#</p>
+        <p>Last Name: #user.name.last#</p>
+
+        <input type="text" wire:model="user.name.first">
+        <input type="text" wire:model="user.name.last">
+
+        #jsonSerialize( data )#
+    </div>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    data = {
+        user: {
+            name: {
+                first: "John",
+                last: "Doe"
+            }
+        }
+    };
+
+
+
+    // @endWire
+</bx:script>

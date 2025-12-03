@@ -1,0 +1,52 @@
+<bx:output>
+    <div
+        x-data="{
+            showLocal: false,
+            async showGreeting() {
+                await $wire.showGreeting();
+                this.showLocal = true;
+            }
+        }"
+        wire:ignore.self>
+        <h2>Simple Greeter (Alpine.js Transition)</h2>
+
+        <button @click="showGreeting" class="btn btn-primary">Show Greeting</button>
+
+        <div
+            x-show="showLocal"
+            x-transition:enter="greeting-enter"
+            x-transition:enter-start="greeting-enter-start"
+            x-transition:enter-end="greeting-enter-end"
+        >
+            <p class="fs-1 fw-bold mt-3">Hello, World!</p>
+        </div>
+
+        <small class="text-muted d-block mt-2">Rendered at: #now()#</small>
+    </div>
+
+    <style>
+        .greeting-enter {
+            transition: all 3s ease-out;
+        }
+        .greeting-enter-start {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        .greeting-enter-end {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    data = {
+        show: false
+    }
+
+    function showGreeting() {
+        data.show = true
+    }
+    // @endWire
+</bx:script>

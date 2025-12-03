@@ -12,7 +12,9 @@
     "ignore":[],
     "dependencies":{
         "coldbox":"^8.0.0",
-        "cbwire":"be"
+        "cbwire":"be",
+        "cbvalidation":"^4.8.0+30",
+        "cbsecurity":"^3.5.0+6"
     },
     "devDependencies":{
         "route-visualizer":"*",
@@ -27,7 +29,9 @@
         "coldbox":"lib/coldbox/",
         "testbox":"lib/testbox/",
         "route-visualizer":"lib/modules/route-visualizer/",
-        "cbwire":"lib/modules/cbwire/"
+        "cbwire":"lib/modules/cbwire/",
+        "cbvalidation":"lib/modules/cbvalidation/",
+        "cbsecurity":"lib/modules/cbsecurity/"
     },
     "scripts":{
         "format":"cfformat run app/,tests/specs/,*.bx --overwrite --verbose",

@@ -1,0 +1,20 @@
+<bx:output>
+    <div>
+        <h1>Lazy Wire</h1>
+
+        <p>Loaded at #getTimestamp()#</p>
+    </div>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    function getTimestamp() {
+        sleep( 5000 );
+        return now();
+    }
+
+    function placeHolder() {
+        return "<div>loading...</div>";
+    }
+    // @endWire
+</bx:script>

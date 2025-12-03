@@ -1,0 +1,31 @@
+<bx:output>
+    <div
+        x-data="{
+            async showGreeting() {
+                await $wire.showGreeting();
+            }
+        }"
+        wire:ignore.self>
+        <h2>Greeter (Alpine.js)</h2>
+
+        <button @click="showGreeting">Show Greeting</button>
+
+        <bx:if show>
+            <p class="fs-1 fw-bold mt-3">Hello, World!</p>
+        </bx:if>
+
+        <small class="text-muted d-block mt-2">Rendered at: #now()#</small>
+    </div>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    data = {
+        show: false
+    }
+
+    function showGreeting() {
+        data.show = true
+    }
+    // @endWire
+</bx:script>

@@ -1,0 +1,58 @@
+<bx:output>
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h2 class="h4 mb-0">
+                <i class="bi bi-shield-lock me-2"></i>Admin Panel
+            </h2>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info mb-4">
+                <strong>Secure, confidential content goes here.</strong>
+            </div>
+
+            <!---
+            <div class="mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <span class="me-2 fw-bold">Authentication Status:</span>
+                    <bx:if isLoggedIn()>
+                        <span class="badge bg-success fs-6">
+                            <i class="bi bi-check-circle me-1"></i>Authenticated
+                        </span>
+                    <bx:else>
+                        <span class="badge bg-warning fs-6">
+                            <i class="bi bi-x-circle me-1"></i>Not Authenticated
+                        </span>
+                    </bx:if>
+                </div>
+
+                <div class="btn-group gap-2" role="group">
+                    <button wire:click="authenticate" class="btn btn-primary">
+                        <i class="bi bi-key me-1"></i>Authenticate
+                    </button>
+                    <button wire:click="logout" class="btn btn-secondary">
+                        <i class="bi bi-box-arrow-right me-1"></i>Log Out
+                    </button>
+                </div>
+            </div>
+            --->
+
+            <hr class="my-4">
+
+            <div class="border border-danger rounded p-3 bg-light">
+                <h5 class="text-danger mb-3">
+                    <i class="bi bi-exclamation-triangle me-2"></i>Danger Zone
+                </h5>
+                <button wire:click="deleteData" class="btn btn-danger">
+                    <i class="bi bi-trash3 me-1"></i>Delete ALL Data
+                </button>
+            </div>
+
+            <bx:if deleted>
+                <div class="alert alert-danger mt-4 mb-0" role="alert">
+                    <i class="bi bi-check-circle me-2"></i>
+                    <strong>All data has been deleted</strong>
+                </div>
+            </bx:if>
+        </div>
+    </div>
+</bx:output>

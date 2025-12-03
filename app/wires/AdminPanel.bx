@@ -1,0 +1,39 @@
+
+
+class extends="cbwire.models.Component" {
+
+    data = {
+        deleted: false
+    }
+
+    function deleteData() {
+        data.deleted = true
+    }
+
+    function onSecure( params) {
+        writeDump( var=params, top=4);
+        abort;
+        return true;
+    }
+
+    // function onSecure()
+
+    // secureMountFailMessage
+
+    // @inject("@cbsecurity")
+    // property name="cbSecurity";
+
+    // function isLoggedIn() {
+    //     return getInstance( "@cbsecurity" ).isLoggedIn()
+    // }
+
+    // function authenticate() {
+    //     getInstance( "@cbsecurity" ).authenticate( "admin", "admin123" )
+    //     data.authenticated = true
+    // }
+
+    // function logout() {
+    //     getInstance( "@cbsecurity").logout();
+    // }
+
+}

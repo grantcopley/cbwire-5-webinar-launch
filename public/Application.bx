@@ -57,6 +57,10 @@ class{
 	 */
 	this.datasource = "coldbox"
 
+	this.mappings = {
+		"/wires"  : expandPath( "/app/wires" )
+	}
+
 	/**
 	 * Fires when the application starts
 	 */

@@ -1,0 +1,25 @@
+<bx:output>
+    <div>
+        <h2>Greeter</h2>
+
+        <button wire:click="showGreeting">Show Greeting</button>
+
+        <bx:if show>
+            <p class="fs-1 fw-bold mt-3">Hello, World!</p>
+        </bx:if>
+
+        <small class="text-muted d-block mt-2">Rendered at: #now()#</small>
+    </div>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    data = {
+        show: false
+    }
+
+    function showGreeting() {
+        data.show = true
+    }
+    // @endWire
+</bx:script>
