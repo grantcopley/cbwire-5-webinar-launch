@@ -8,6 +8,16 @@ CBWIRE is a reactive framework for ColdBox that brings the power of Livewire to 
 
 📚 **Documentation**: [https://cbwire.ortusbooks.com/](https://cbwire.ortusbooks.com/)
 
+## 🚀 Running This Repository
+
+To run this demo application, you need [CommandBox](https://www.ortussolutions.com/products/commandbox) installed.
+
+```bash
+box server start
+```
+
+Your application will be available at `http://localhost:3000`
+
 ## 🔍 Explore the Examples
 
 This repository contains practical demonstrations of CBWIRE features. Each example is a working wire component you can explore and learn from.
