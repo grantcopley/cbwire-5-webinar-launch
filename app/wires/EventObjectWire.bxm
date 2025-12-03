@@ -1,0 +1,32 @@
+<bx:output>
+    <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+            <h2 class="h4 mb-0">Event Object Access</h2>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info">
+                <strong>Note:</strong> You can access the ColdBox event object directly in your wire templates.
+            </div>
+
+            <div class="list-group">
+                <a href="#event.buildLink( 'main.index' )#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-house me-2"></i>Home
+                </a>
+                <a href="#event.buildLink( 'main.about' )#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-info-circle me-2"></i>About
+                </a>
+                <a href="#event.buildLink( 'main.contact' )#" class="list-group-item list-group-item-action">
+                    <i class="bi bi-envelope me-2"></i>Contact
+                </a>
+            </div>
+
+            <small class="text-muted d-block mt-3">Rendered at: #now()#</small>
+        </div>
+    </div>
+</bx:output>
+
+<bx:script>
+    // @startWire
+    data = {}
+    // @endWire
+</bx:script>
