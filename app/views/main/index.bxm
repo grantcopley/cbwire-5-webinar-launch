@@ -15,8 +15,8 @@
 				- #wire( "AdminPanel", { userId: 50 } )#
 				- secureMountFailMessage
 				- cbsecurity annotations
+				- CSRF New Implementation
 		- @extends for Single file components
-		- CSRF New Implementation
 		- Lazy Loading lazy = true (LazyWire)
 		- Dot Notation Data Properties (DotNotationWire)
 		- Locked Properties (LockedPropertiesWire)
@@ -32,5 +32,6 @@
 		- Honorable Mentions
 			- File Uploads
 			- CBWIRE CLI - https://github.com/mrigsby/cbwire-cli
+	- Launch (https://github.com/coldbox-modules/cbwire)
 	- Q&A
 --->
