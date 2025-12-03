@@ -5,10 +5,8 @@
         <p>First Name: #user.name.first#</p>
         <p>Last Name: #user.name.last#</p>
 
-        <input type="text" wire:model="user.name.first">
-        <input type="text" wire:model="user.name.last">
-
-        #jsonSerialize( data )#
+        <input type="text" wire:model.blur="user.name.first">
+        <input type="text" wire:model.blur="user.name.last">
     </div>
 </bx:output>
 
@@ -23,7 +21,16 @@
         }
     };
 
+    // function onUpdateUser_Name_First( value, oldValue  ) {
+    //     data.user.name.first = value.toUpperCase();
+    // }
 
+    // function onUpdateUser_Name_Last( value, oldValue  ) {
+    //     data.user.name.last = value.toUpperCase();
+    // }
+
+    // function onUpdate( newValues, oldValues) {
+    // }
 
     // @endWire
 </bx:script>

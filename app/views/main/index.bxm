@@ -7,8 +7,9 @@
 <!---
 	Overview
 	- Welcome
-	- What is CBWIRE (Greeter, Alpine, Transition, Extends @extends)
+	- What is CBWIRE (Greeter, Alpine, Transition)
 	- New Features
+		- @extends for Single file components
 		- Security Features
 			-onSecure (AdminPanel)
 				- #wire( "AdminPanel", { userId: 50 } )#
@@ -16,6 +17,16 @@
 				- cbsecurity annotations
 			- Lazy Loading lazy = true (LazyWire)
 			- Dot Notation Data Properties (DotNotationWire)
+			- Locked Properties (LockedPropertiesWire)
+			- Folder Organization ( wires/subfolder )
+		- Livewire v3.6.4
+			- New Directives
+				- wire:current
+				- wire:cloak
+				- wire:show
+				- wire:text
+				- wire:replace
+
 
 
 --->
